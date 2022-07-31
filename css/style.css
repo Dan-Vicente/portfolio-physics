@@ -101,3 +101,7 @@ body {
 .links {
   font-size: 12px;
 }
+.botton{
+  display: flex;
+  justify-content: center;
+}
