@@ -23,10 +23,17 @@ body {
   height: 100vh;
   color: #aeaeae;
 }
-
+.container{
+  padding: 0 16px;
+}
 .title {
   font-size: 36px;
   font-weight: normal;
+}
+.profile{
+  max-width: 452px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .box {
@@ -96,7 +103,9 @@ body {
   font-size: 24px;
   color: white;
   text-shadow: 2px 2px 16px black;
-  margin: 50vh 0;
+  margin-top: 50vh;
+  text-align: center;
+  padding-bottom: 50vh;
 }
 .links {
   font-size: 12px;
@@ -104,4 +113,38 @@ body {
 .botton{
   display: flex;
   justify-content: center;
+}
+@media(max-width: 600px){
+  .body{
+    background-attachment: initial;
+    background-size: contain;
+    background-color: beige;
+  }
+  .box{
+    padding: 2rem;
+    margin-top: 4rem;
+    border-radius: 30px;
+
+  }
+  .portfolio ul{
+    margin-top: 1rem;
+  }
+  .box:first-child{
+    padding: 3rem;
+  }
+  .portfolio li{
+    grid-template-columns: 1fr;
+justify-items: center;
+  }
+
+.portfolio li div{
+  max-width: 448px;
+}
+.copyright{
+  padding: 4rem 0;
+  font-size: 15px;
+  color: #606060;
+  text-shadow: none;
+}
+
 }
